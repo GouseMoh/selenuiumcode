@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="mysuite">
+   <test name ="my test">
+    <classes >
+    <class name="day31testNG.SecondTestcase"/>
+    <class name ="day31testNG.FirstTestNG"/>
+    </classes>
+   </test>
+</suite>

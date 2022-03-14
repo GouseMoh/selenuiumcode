@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chrome test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com"/>
+    <classes>
+      <class name="day33.ParamaTest">
+        <methods>
+          <include name="TestLogo"/>
+          <include name="setup"/>
+          <include name="tearDemo"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- day33.ParamaTest -->
+    </classes>
+  </test> <!-- chrome test(failed) -->
+  <test thread-count="5" parallel="tests" name="edgetest(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com"/>
+    <classes>
+      <class name="day33.ParamaTest">
+        <methods>
+          <include name="TestLogo"/>
+          <include name="setup"/>
+          <include name="tearDemo"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- day33.ParamaTest -->
+    </classes>
+  </test> <!-- edgetest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
